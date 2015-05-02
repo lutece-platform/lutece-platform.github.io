@@ -1,61 +1,142 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <title>LUTECE : Open Source Content Management Framework </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="./flatly/bootstrap.css" media="screen">
+        <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/bootswatch.min.css">
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
+          <script src="./bower_components/respond/dest/respond.min.js"></script>
+        <![endif]-->
     </head>
-    <body>
+    <body id="home">
+        <div class="navbar navbar-default navbar-fixed-top navbar-transparent">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="./" class="navbar-brand"><img src="assets/img/logo-nav.png">LUTECE</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a target="_blank" href="http://dev.lutece.paris.fr/site-demo/">Demo</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/lutece-platform">Source code</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://dev.lutece.paris.fr/">Documentation</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="splash">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- <div><img class="logo" src="assets/img/logo.png"></div> -->
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <img class="img-responsive" src="images/logo-lutece.svg" />
+                            </div>
+                        </div>
+                        <h4>Free and powerful Java&trade; based Content Management Framework</h4>
+                        <div id="social">
+                            <span>
+                                <a href="https://twitter.com/lutecenews" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @LuteceNews</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-tout">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-file-o"></i> Easy to Install and Use</h3>
+                        <p>Try the <a target="_blank" href="http://dev.lutece.paris.fr/site-demo/">Online Demo</a>. 
+                           Try to install as a <a href="https://registry.hub.docker.com/u/lutece/lutece-demo/" title="Get the docker image" >
+                               Docker container</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-cogs"></i> Modular</h3>
+                        <p>It provides a very modular architecture with over 300 plugins and a powerful assembling system based on Apache Maven.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-github"></i> Open Source</h3>
+                        <p>LUTECE is released under the BSD License and maintained on <a target="_blank" href="https://github.com/lutece-platform">GitHub</a>.
+                            It uses best of breed Open Source software libraries Spring, Ehcache, Freemarker, Lucene, ...
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-wrench"></i> Documentation</h3>
+                        <p>Access the <a target="_blank" href="http://dev.lutece.paris.fr/">Documentation</a>.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-desktop"></i><i class="fa fa-tablet"></i><i class="fa fa-mobile-phone"></i>Responsive Design</h3>
+                        <p>Build with the latest releases of Twitter <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> CSS framework.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <h3><i class="fa fa-bullhorn"></i> Stay Tuned</h3>
+                        <p>Follow us on <a href="https://twitter.com/lutecenews">Twitter</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="container">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <br><br>
-                    <img class="img-responsive" src="images/logo-lutece.svg" alt="lutece logo" />
-                </div>     
-                <div class="jumbotron col-md-8">
-
-                    <h1><small>Open Source Content Management Framework</small></h1>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>&copy; City of Paris 2015</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="well">
-                    <p>
-                        LUTECE is a Java&trade; based CMS, Portal and Framework. It uses best of breed Open Source software libraries 
-                        Spring, Ehcache, Freemarker, Lucene, ...
-                    </p>
-                    <p>
-                        It provides a very modular architecture with a powerful assembling system based on Apache Maven.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row marketing">
-                <div class="col-sm-6">
-                    <h2>Get source code</h2>
-                    <p>Core and plugins are hosted on</p>
-                    <a href="https://github.com/lutece-platform" title="Get source code">
-                        <img class="img-responsive" src="images/github.jpeg" alt="GitHub Logo" />
-                    </a>
-                </div>
-
-                <div class="col-sm-6">
-                    <h2>Deploy for test</h2>
-                    <p>Test as Docker container</p>
-                    <a href="https://registry.hub.docker.com/u/lutece/lutece-demo/" title="Get the docker image" >
-                        <img src="images/docker-lutece.png" alt="lutece container on the docker's whale" />
-                    </a>
-                    <p>
-                        <code>docker run -p 80:8080 lutece/lutece-demo</code>
-                    </p>
-                </div>
-
-            </div>
-            <footer class="footer">
-                <p>&copy; City of Paris 2015</p>
             </footer>
 
-        </div> <!-- /container -->
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script>
+                    !function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+        </script>
+
 
     </body>
 </html>
+
