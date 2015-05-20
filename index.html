@@ -21,6 +21,13 @@
           <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
           <script src="./bower_components/respond/dest/respond.min.js"></script>
         <![endif]-->
+		<style>
+		/* FOOTER */
+		footer{margin:0;padding:1em;background-color: #212121;}
+		#footer{ color: #FFFFFF; text-align: center; }
+		#footer a, #footer a:hover{color: #FFFFFF;}
+		#footer .social-pics{max-width:50px;padding:5px;display: inline-block;}
+		</style>
     </head>
     <body id="home">
         <div class="navbar navbar-default navbar-fixed-top navbar-transparent">
@@ -109,34 +116,48 @@
 
             </div>
         </div>
+		<footer>
+			<div id="footer">
+				<div class="row">
+					<div class="col-lg-6 col-lg-offset-3">
+						<strong>Follow us : </strong>
+						<a href="https://www.linkedin.com/groups/Lutece-3925974" target="_blank" title="Nous suivre sur Linkedin"><img src="images/linkedin.jpg" alt="Nous suivre sur Linkedin" class="social-pics"/></a>
+						<a href="https://twitter.com/lutecenews" target="_blank" title="Nous suivre sur Twitter"><img src="images/Twitter_logo_white.png" alt="Nous suivre sur Twitter" class="social-pics"/></a>
+						<a href="https://www.openhub.net/p/lutece" target="_blank" title="Nous suivre sur openHub"><img src="images/OH_logo.png" alt="Nous suivre sur openHub" class="social-pics"/></a>
+						<a href="https://github.com/lutece-platform" target="_blank" title="Nous suivre sur GitHub"><img src="images/GitHub-white-Mark-v02.png" alt="Nous suivre sur GitHub" class="social-pics"/></a>
 
-        <div class="container">
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>&copy; City of Paris 2015</p>
-                    </div>
-                </div>
-            </footer>
-
-
-        </div>
-
-
-        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script>
-                    !function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = "https://platform.twitter.com/widgets.js";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, "script", "twitter-wjs");
-        </script>
-
-
-    </body>
+					</div>
+					<div class="col-lg-3">
+						<div class="pull-right"><a href="#home"><span class="fa fa-angle-double-up"></span> Top</a></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<img src="images/poweredby.jpg" alt="Powered by Lutece" class="pull-left">
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p>2015 - Design and code by the <a href="https://github.com/orgs/lutece-platform/people">Lutece Dev Team</a> on <a href="https://github.com/lutece-platform/lutece-core"> Lutece core 5 </a></p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+						<p class="pull-right">
+							<a href="http://paris.fr/" title="City of Paris"><img src="images/mdp_white.png" alt="City of Paris" title="City of Paris" ></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+		!function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+				js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+             }
+        }(document, "script", "twitter-wjs");
+    </script>
+</body>
 </html>
 
